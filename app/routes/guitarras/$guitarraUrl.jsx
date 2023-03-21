@@ -1,6 +1,8 @@
 import { useLoaderData, useOutletContext } from "@remix-run/react";
 import { getGuitarraByUrl } from "~/models/guitarras.server";
 import { useState } from "react";
+import toast from 'react-hot-toast';
+import { Link, useLocation } from '@remix-run/react'
 
 export async function loader({ params }) {
   const { guitarraUrl } = params;
@@ -20,12 +22,12 @@ export async function loader({ params }) {
 export function meta({ data }) {
   if (!data) {
     return {
-      title: "GuitarLA - Guitarra no encontrada",
-      description: "GuitarLA - Guitarra no encontrada",
+      title: "GuitarBA - Guitarra no encontrada",
+      description: "GuitarBA - Guitarra no encontrada",
     };
   }
   return {
-    title: `GuitarLA - ${data.data[0].attributes.nombre.toUpperCase()}`,
+    title: `GuitarBA - ${data.data[0].attributes.nombre.toUpperCase()}`,
     description: `Guitarras, venta de guitarras, guitarra ${data.data[0].attributes.nombre}`,
   };
 }
@@ -34,7 +36,7 @@ function Guitarra() {
 
   const {agregarCarrito} = useOutletContext();
 
-
+  const location = useLocation()
 
   const [cantidad, setCantidad] = useState(0);
 
@@ -58,13 +60,12 @@ function Guitarra() {
     }
 
     agregarCarrito(guitarraSeleccionada);
+    toast.success('¡Guitarra agregada al carrito!');
   }
 
   return (
     <div className="contenedor guitarra">
-      <div className="contenedor popup-contenedor">
-        <p className="popup-texto">holaaaaaaaa</p>
-      </div>
+      
       <img
         className="imagen"
         src={imagen.data.attributes.url}

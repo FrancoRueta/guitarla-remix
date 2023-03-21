@@ -4,8 +4,8 @@ import { useOutletContext } from '@remix-run/react'
 
 export function meta(){
   return{
-    title: 'GuitarLA - Nosotros',
-    description: 'GuitarLA es una tienda de guitarras y accesorios para guitarras'
+    title: 'GuitarBA - Nosotros',
+    description: 'GuitarBA es una tienda de guitarras y accesorios para guitarras'
   }
 }
 

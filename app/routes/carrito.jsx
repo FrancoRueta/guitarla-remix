@@ -11,8 +11,8 @@ export function links() {
 
 export function meta() {
     return {
-        title: 'GuitarLA - Carrito de Compras',
-        description: 'Carrito de Compras, GuitarLA, Tienda de guitarras y accesorios, Buenos Aires, Argentina'
+        title: 'GuitarBA - Carrito de Compras',
+        description: 'Carrito de Compras, GuitarBA, Tienda de guitarras y accesorios, Buenos Aires, Argentina'
     }
 }
 

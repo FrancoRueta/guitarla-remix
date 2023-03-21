@@ -5,8 +5,8 @@ import ListadoGuitarras from "~/components/listadoGuitarras";
 
 export function meta(){
   return {
-    title: "GuitarLA - Guitarras",
-    description: "GuitarLA - Tienda de Guitarras - Venta de guitarras electricas, acusticas, clasicas y bajos de las mejores marcas",
+    title: "GuitarBA - Guitarras",
+    description: "GuitarBA - Tienda de Guitarras - Venta de guitarras electricas, acusticas, clasicas y bajos de las mejores marcas",
   }
 
 }
