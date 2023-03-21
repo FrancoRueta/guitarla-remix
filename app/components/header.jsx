@@ -8,7 +8,7 @@ function Header() {
     <header className="header">
         <div className='contenedor barra'>
             <Link to="/">
-                <img className='logo' src={logo} alt='GuitarLA' />
+                <img className='logo' src={logo} alt='GuitarBA' />
             </Link>
             <Navegacion/>
         </div>

@@ -94,8 +94,8 @@
 }
 
 .contenedor .guitarra {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -130,4 +130,12 @@
     .contenedor .guitarra:last-of-type{
         border-bottom: none;
     }
+}
+
+.div-boton-volver{
+    width: 100%;
+}
+
+.boton-volver-guitarras {
+    all: unset;
 }

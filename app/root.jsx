@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import { Meta, Links, Outlet, Scripts, LiveReload, useCatch, Link } from '@remix-run/react'
+import { Toaster } from 'react-hot-toast';
 import styles from '~/styles/index.css'
 import Header from '~/components/header.jsx'
 import Footer from '~/components/footer'
@@ -9,7 +10,7 @@ export function meta() {
     return (
         {
             charset: "utf-8",
-            title: "GuitarBA - Guitarras y mas",
+            title: "GuitarBA - Tienda de guitarras y accesorios",
             viewport: "width=device-width, initial-scale=1"
         }
     )
@@ -88,6 +89,17 @@ export default function App(){
                     actualizarCantidad,
                     eliminarGuitarra
                 }}
+            />
+            <Toaster
+                position="top-right"
+                toastOptions={{
+                    duration: 5000,
+                    style: {
+                        background: '#3d4242',
+                        color: '#fff',
+                      }
+                }}
+                
             />
         </Document>
     )

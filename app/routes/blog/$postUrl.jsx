@@ -18,12 +18,12 @@ export async function loader({ params }) {
 export function meta({data}) {
     if(!data){
       return {
-        title: 'GuitarLA - Post no encontrado',
-        description: 'GuitarLA - Post no encontrado'
+        title: 'GuitarBA - Post no encontrado',
+        description: 'GuitarBA - Post no encontrado'
       }
     }
     return {
-      title: `GuitarLA - ${(data.data[0].attributes.titulo)}`,
+      title: `GuitarBA - ${(data.data[0].attributes.titulo)}`,
       description: `Guitarras, venta de guitarras, guitarra ${data.data[0].attributes.titulo}`
     };
   }

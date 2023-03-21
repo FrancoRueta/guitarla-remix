@@ -1,4 +1,5 @@
-import Guitarra from '~/components/Guitarra';
+import Guitarra from './guitarra'
+
 
 export default function ListadoGuitarras({guitarras}) {
   return (
